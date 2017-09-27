@@ -14,3 +14,7 @@ https://www.clementine-player.org/
 To install:
 
 sudo snap install --beta clementine
+
+confinement: "classic"
+
+If your distribution is not considered a "classic" distribution, please run the snap in --devmode. 
