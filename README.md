@@ -15,7 +15,7 @@ To install:
 
 sudo snap install --beta clementine
 
-confinement: "classic"
+confinement: "strict"
 
 If your distribution is not considered a "classic" distribution, please run the snap in --devmode. 
 
