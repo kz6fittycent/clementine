@@ -13,7 +13,7 @@ https://www.clementine-player.org/
 
 To install:
 
-sudo snap install --beta clementine
+sudo snap install clementine
 
 confinement: "strict"
 
