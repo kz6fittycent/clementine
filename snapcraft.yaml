@@ -17,7 +17,6 @@ apps:
       - pulseaudio
       - unity7
       - x11
-      - gsettings
       - optical-drive
       - removable-media
       - screen-inhibit-control
@@ -75,7 +74,7 @@ parts:
 
     source-type: git
     source: https://github.com/clementine-player/Clementine
-    after: [desktop-qt4] 
+    after: [desktop-qt4,desktop-gtk3] 
     plugin: cmake
     
     # add new revision to enable builds for arm and i386
