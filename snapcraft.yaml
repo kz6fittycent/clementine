@@ -74,7 +74,7 @@ parts:
 
     source-type: git
     source: https://github.com/clementine-player/Clementine
-    after: [desktop-qt4,desktop-gtk3] 
+    after: [desktop-qt5] 
     plugin: cmake
     
     # add new revision to enable builds for arm and i386
