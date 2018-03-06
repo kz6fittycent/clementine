@@ -23,6 +23,7 @@ apps:
       - alsa
       - raw-usb
       - media-hub
+      - desktop
       
   
 parts:
