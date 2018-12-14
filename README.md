@@ -1,3 +1,6 @@
+
+[![Snap Status](https://build.snapcraft.io/badge/kz6fittycent/clementine.svg)](https://build.snapcraft.io/user/kz6fittycent/clementine)
+
 # clementine
 A snap for Clementine Music Player
 
