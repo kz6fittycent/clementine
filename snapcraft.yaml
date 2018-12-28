@@ -1,5 +1,5 @@
 name: clementine # check to see if it's available
-version: '1.3.1.37+git' # check the version number of clementine's packages
+version: '1.3.1.38+git' # check the version number of clementine's packages
 summary: Clementine is a modern music player. # 79 char long summary
 description: |
   Clementine is a modern music player and library organizer for Windows, Linux and Mac OS X.
@@ -39,7 +39,7 @@ parts:
       - libcdio13
       - libchromaprint0
       - libcrypto++9v5
-      - libechonest2.3
+      #- libechonest2.3
       - libfftw3-double3
       - libgcc1 
       - libgl1-mesa-glx
@@ -70,6 +70,7 @@ parts:
       - gstreamer1.0-plugins-ugly
       - gstreamer1.0-plugins-bad 
       - gstreamer1.0-pulseaudio
+      - gstreamer1.0-plugins-alsa
       - libprojectm2v5
       - projectm-data
       - libgpm2
