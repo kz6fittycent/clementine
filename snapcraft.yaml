@@ -70,7 +70,7 @@ parts:
       - gstreamer1.0-plugins-ugly
       - gstreamer1.0-plugins-bad 
       - gstreamer1.0-pulseaudio
-      - gstreamer1.0-plugins-alsa
+      - gstreamer1.0-alsa
       - libprojectm2v5
       - projectm-data
       - libgpm2
