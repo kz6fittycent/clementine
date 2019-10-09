@@ -81,3 +81,9 @@ parts:
     plugin: cmake
     
     # add new revision to enable builds for arm and i386
+
+  fixicon:
+    plugin: nil
+    after: [my-part]
+    override-build: |
+      sed -i 's|Icon=clementine|Icon=/share/icons/hicolor/scalable/apps/clementine\.svg|' $SNAPCRAFT_STAGE/share/applications/clementine.desktop
