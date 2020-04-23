@@ -166,6 +166,7 @@ parts:
       - gstreamer1.0-libav
       - dbus-x11
       - projectm-data
+      - qtwayland5 # Attempt at Wayland Support
 
 apps:
   clementine:
