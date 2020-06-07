@@ -172,6 +172,7 @@ parts:
       - dbus-x11
       - projectm-data
       - qtwayland5 # Attempt at Wayland Support
+      - libqt5-sqlite
 
 apps:
   clementine:
