@@ -115,6 +115,7 @@ parts:
       - libglew-dev
       - libcrypto++-dev
       - libsparsehash-dev
+      - libqt5-sqlite
 
     stage-packages:
       - libstdc++6
