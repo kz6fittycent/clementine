@@ -1,5 +1,6 @@
 name: clementine
-version: 'latest'
+#version: 'latest'
+adopt-info: clementine
 summary: modern music player
 description: |
   Clementine is a modern music player and library organizer
@@ -73,6 +74,11 @@ parts:
     after:
       - alsa-lib
       - desktop-qt5
+      
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
+      
     override-build: |
       cmake ../src -DCMAKE_INSTALL_PREFIX=/usr
       make -j $(getconf _NPROCESSORS_ONLN)
@@ -115,7 +121,7 @@ parts:
       - libglew-dev
       - libcrypto++-dev
       - libsparsehash-dev
-      - libqt5-sqlite
+#      - libqt5-sqlite
 
     stage-packages:
       - libstdc++6
@@ -173,7 +179,7 @@ parts:
       - dbus-x11
       - projectm-data
       - qtwayland5 # Attempt at Wayland Support
-      - libqt5-sqlite
+#      - libqt5-sqlite
 
 apps:
   clementine:
