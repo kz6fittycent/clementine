@@ -85,6 +85,7 @@ parts:
       make DESTDIR=$SNAPCRAFT_PART_INSTALL install
       sed -i 's|Icon=clementine|Icon=/usr/share/icons/hicolor/scalable/apps/clementine\.svg|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/clementine.desktop
       sed -i 's|TryExec=.*|TryExec=/snap/bin/clementine|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/clementine.desktop
+#      add-apt-repository ppa:rock-core/qt4 # may need this
 
     build-packages:
       - cmake
@@ -179,7 +180,8 @@ parts:
       - dbus-x11
       - projectm-data
       - qtwayland5 # Attempt at Wayland Support
-      - libqt4-dev # Attempt to get Spotify to work
+      - libqtcore4 # Attempt to get Spotify to work
+      
 
 apps:
   clementine:
