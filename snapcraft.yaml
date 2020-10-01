@@ -181,6 +181,7 @@ parts:
       - projectm-data
       - qtwayland5 # Attempt at Wayland Support
       - libqtcore4 # Attempt to get Spotify to work
+      - glibc # Attempt to get Spotify to work
       
 
 apps:
