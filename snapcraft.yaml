@@ -179,7 +179,7 @@ parts:
       - dbus-x11
       - projectm-data
       - qtwayland5 # Attempt at Wayland Support
-#      - libqt5-sqlite
+      - qt4-default # Attempt to get Spotify to work
 
 apps:
   clementine:
