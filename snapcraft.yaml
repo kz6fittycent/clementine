@@ -182,11 +182,24 @@ parts:
       - qtwayland5 # Attempt at Wayland Support
       - libqtcore4 # Attempt to get Spotify to work
       - glibc-source # Attempt to get Spotify to work
-      
+
+plugs:
+  gtk-3-themes:
+    interface: content
+    target: $SNAP/data-dir/themes
+    default-provider: gtk-common-themes
+  icon-themes:
+    interface: content
+    target: $SNAP/data-dir/icons
+    default-provider: gtk-common-themes
+  sound-themes:
+    interface: content
+    target: $SNAP/data-dir/sounds
+    default-provider: gtk-common-themes
 
 apps:
   clementine:
-    command: desktop-launch $SNAP/usr/bin/clementine
+    command: bin/desktop-launch $SNAP/usr/bin/clementine
     desktop: usr/share/applications/clementine.desktop
     environment:
       ALSA_CONFIG_PATH: /snap/$SNAPCRAFT_PROJECT_NAME/current/usr/share/alsa/alsa.conf
@@ -214,7 +227,7 @@ apps:
       - mpris
 
   clementine-tagreader:
-    command: clementine-tagreader
+    command: usr/bin/clementine-tagreader
     plugs:
       - network
       - network-manager-observe
