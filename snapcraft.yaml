@@ -182,6 +182,9 @@ parts:
       - qtwayland5 # Attempt at Wayland Support
       - libqtcore4 # Attempt to get Spotify to work
       - glibc-source # Attempt to get Spotify to work
+      - plasma-integration
+      - kde-style-breeze
+      - qt5-gtk-platformtheme
 
 plugs:
   gtk-3-themes:
