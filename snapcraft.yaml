@@ -1,6 +1,6 @@
 name: clementine
-version: 'latest'
-#adopt-info: clementine
+#version: 'latest'
+adopt-info: clementine
 summary: modern music player
 description: |
   Clementine is a modern music player and library organizer
@@ -75,9 +75,9 @@ parts:
       - alsa-lib
       - desktop-qt5
       
- #   override-pull: |
- #     snapcraftctl pull
- #     snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
       
     override-build: |
       cmake ../src -DCMAKE_INSTALL_PREFIX=/usr
