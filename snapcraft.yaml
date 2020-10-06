@@ -77,7 +77,7 @@ parts:
       
     override-pull: |
       snapcraftctl pull
-      snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1-2)"
       
     override-build: |
       cmake ../src -DCMAKE_INSTALL_PREFIX=/usr
