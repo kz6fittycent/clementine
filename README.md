@@ -1,3 +1,6 @@
+# NOTE
+## I will no longer be maintaining this snap. 
+## Please refer all issues to the [Clementine project](https://github.com/clementine-player/Clementine/issues).
 
 # clementine
 A snap for Clementine Music Player
