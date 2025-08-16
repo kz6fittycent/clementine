@@ -149,7 +149,7 @@ parts:
       - libasound2
       - libasound2-plugins
       - libpulse0
-      - libcdio19
+      - libcdio-dev
       - libgpod4
       - libmtp9
       - libplist3
