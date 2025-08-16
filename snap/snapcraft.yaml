@@ -6,7 +6,7 @@ description: |
 
 grade: stable
 confinement: strict
-base: core20
+base: core18
 compression: lzo
 
 assumes:
