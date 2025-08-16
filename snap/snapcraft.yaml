@@ -6,7 +6,7 @@ description: |
 
 grade: stable
 confinement: strict
-base: core18
+base: core20
 compression: lzo
 
 assumes:
@@ -149,7 +149,7 @@ parts:
       - libasound2
       - libasound2-plugins
       - libpulse0
-      - libcdio17
+      - libcdio19
       - libgpod4
       - libmtp9
       - libplist3
