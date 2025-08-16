@@ -6,7 +6,7 @@ description: |
 
 grade: stable
 confinement: strict
-base: core18
+base: core20
 compression: lzo
 
 assumes:
@@ -16,7 +16,6 @@ license: GPL-3.0
 
 architectures:
   - build-on: amd64
-  - build-on: i386
   - build-on: arm64
 
 parts:
